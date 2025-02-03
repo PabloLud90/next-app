@@ -1,5 +1,6 @@
-import { PokemonsResponse, SimplePokemons } from "@/app/pokemons";
-import { PokemonGrid } from "../../pokemons/components/PokemonGrid"
+import { PokemonsResponse, SimplePokemons } from "@/pokemons";
+import { PokemonGrid } from '../../../pokemons/components/PokemonGrid';
+
 
 const getPokemons = async (
   limit = 20,
@@ -26,9 +27,9 @@ export default async function PokemonPage() {
       <span className="text-5xl my-2">
         Listado de pokemons <small>Estatico</small>
       </span>
+
       <PokemonGrid pokemons={pokemons}/>
-
-
+    
     </div>
   );
 }
